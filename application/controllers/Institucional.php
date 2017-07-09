@@ -6,19 +6,26 @@
 		
 		public function index()
 		{
-			$this->load->view('home');
+			$data['title'] = "LCI | Home";
+			$data['description'] = "Exercício de exemplo do capítulo 5 do livro CodeIgniter";
+			
+			$this->load->view('home', $data);
 		}
 		
 		public function Empresa()
 		{
-			$this->load->view('commons/header');
+			$data['title'] = "LCI | A Empresa";
+			$data['description'] = "Informações sobre a empresa";
+			$this->load->view('commons/header', $data);
 			$this->load->view('empresa');
 			$this->load->view('commons/footer');
 		}
 		
 		public function Servicos()
 		{
-			$this->load->view('commons/header');
+			$data['title'] = "LCI | Serviços";
+			$data['description'] = "Informações sobre os serviços prestados";
+			$this->load->view('commons/header', $data);
 			$this->load->view('servicos');
 			$this->load->view('commons/footer');
 		}

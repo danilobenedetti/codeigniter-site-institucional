@@ -76,7 +76,7 @@ class CI_Router {
 	 *
 	 * @var	string
 	 */
-	public $method =	'index';
+	public $method = 	'index';
 
 	/**
 	 * Sub-directory that contains the requested controller class
